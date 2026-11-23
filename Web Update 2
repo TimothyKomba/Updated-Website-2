@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kadim Consultancy Sierra Leone Limited | Engineering, Geological &amp; General Services</title>
+<meta name="description" content="Kadim Consultancy Sierra Leone Limited — engineering, geological and geotechnical investigation, quality control, and general supply services for construction and mining across Sierra Leone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14171a;
+    --ink-soft:#3a3f42;
+    --paper:#f7f6f2;
+    --paper-dim:#efece4;
+    --stone:#e6e1d3;
+    --rust:#a6431f;
+    --rust-deep:#7e3117;
+    --slate:#2e4756;
+    --slate-soft:#4a6577;
+    --gold:#b3872a;
+    --line:rgba(20,23,26,0.14);
+    --line-strong:rgba(20,23,26,0.28);
+    --paper-line:rgba(247,246,242,0.22);
+    --ff-display:'Fraunces', serif;
+    --ff-body:'IBM Plex Sans', sans-serif;
+    --ff-mono:'IBM Plex Mono', monospace;
+    --maxw:1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--ff-body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  h1,h2,h3,h4{font-family:var(--ff-display);font-weight:600;margin:0;letter-spacing:-0.01em;}
+  p{margin:0;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  .eyebrow{
+    font-family:var(--ff-mono);
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:7px;height:7px;
+    background:var(--rust);
+    display:inline-block;
+    transform:rotate(45deg);
+    flex-shrink:0;
+  }
+  section{padding:104px 0;}
+  @media(max-width:720px){ section{padding:72px 0;} }
+  :focus-visible{outline:2px solid var(--rust);outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(247,246,242,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .navwrap{
+    max-width:var(--maxw);margin:0 auto;padding:0 28px;
+    display:flex;align-items:center;justify-content:space-between;
+    height:78px;
+  }
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);}
+  .brand-mark{
+    width:36px;height:36px;border:1.5px solid var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    position:relative;flex-shrink:0;
+  }
+  .brand-mark::before,.brand-mark::after{
+    content:"";position:absolute;background:var(--rust);
+  }
+  .brand-mark::before{width:1.5px;height:16px;}
+  .brand-mark::after{width:16px;height:1.5px;}
+  .brand-text{line-height:1.15;}
+  .brand-text strong{
+    display:block;font-family:var(--ff-display);font-size:16.5px;font-weight:600;letter-spacing:0.01em;
+  }
+  .brand-text span{
+    display:block;font-family:var(--ff-mono);font-size:10px;letter-spacing:0.12em;color:var(--ink-soft);text-transform:uppercase;
+  }
+  nav.links{display:flex;align-items:center;gap:34px;}
+  nav.links a{
+    font-size:14.5px;text-decoration:none;color:var(--ink-soft);
+    position:relative;padding:4px 0;
+  }
+  nav.links a:hover{color:var(--ink);}
+  nav.links a::after{
+    content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--rust);
+    transition:width 0.25s ease;
+  }
+  nav.links a:hover::after{width:100%;}
+  .cta-btn{
+    font-family:var(--ff-mono);font-size:12.5px;letter-spacing:0.06em;text-transform:uppercase;
+    background:var(--ink);color:var(--paper);
+    padding:11px 20px;text-decoration:none;
+    border:1px solid var(--ink);
+    transition:background 0.2s ease, color 0.2s ease;
+    white-space:nowrap;
+  }
+  .cta-btn:hover{background:var(--rust);border-color:var(--rust);}
+  .menu-toggle{display:none;background:none;border:1px solid var(--line-strong);width:42px;height:42px;cursor:pointer;position:relative;}
+  .menu-toggle span, .menu-toggle span::before, .menu-toggle span::after{
+    content:"";position:absolute;left:11px;width:20px;height:1.5px;background:var(--ink);
+  }
+  .menu-toggle span{top:20px;}
+  .menu-toggle span::before{top:-6px;}
+  .menu-toggle span::after{top:6px;}
+
+  @media(max-width:900px){
+    nav.links{
+      position:fixed;top:78px;left:0;right:0;bottom:0;
+      background:var(--paper);
+      flex-direction:column;align-items:flex-start;gap:0;
+      padding:10px 28px 40px;
+      transform:translateX(100%);
+      transition:transform 0.3s ease;
+      overflow-y:auto;
+    }
+    nav.links.open{transform:translateX(0);}
+    nav.links a{width:100%;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px;}
+    nav.links .cta-btn{margin-top:18px;text-align:center;}
+    .menu-toggle{display:block;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:var(--ink);
+    color:var(--paper);
+    padding:150px 0 130px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    position:absolute;inset:0;
+    background-image:
+      linear-gradient(var(--paper-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--paper-line) 1px, transparent 1px);
+    background-size:64px 64px;
+    opacity:0.35;
+    mask-image:linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0));
+  }
+  .hero-contours{
+    position:absolute;right:-8%;top:-10%;width:60%;height:130%;
+    opacity:0.5;pointer-events:none;
+  }
+  .hero-inner{position:relative;z-index:2;max-width:760px;}
+  .hero .eyebrow{color:#e4b896;margin-bottom:26px;}
+  .hero .eyebrow::before{background:var(--rust);}
+  .hero h1{
+    font-size:clamp(2.4rem, 5.2vw, 4.1rem);
+    line-height:1.05;
+    font-weight:600;
+    color:#fbf9f4;
+  }
+  .hero h1 em{font-style:italic;color:var(--rust);font-weight:500;}
+  .hero-sub{
+    margin-top:26px;max-width:560px;
+    font-size:18px;line-height:1.65;color:#c9cdd0;
+  }
+  .hero-actions{display:flex;gap:16px;margin-top:42px;flex-wrap:wrap;}
+  .btn-primary{
+    font-family:var(--ff-mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+    background:var(--rust);color:#fff;padding:15px 26px;text-decoration:none;
+    border:1px solid var(--rust);transition:background 0.2s ease;
+  }
+  .btn-primary:hover{background:var(--rust-deep);}
+  .btn-ghost{
+    font-family:var(--ff-mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+    color:#f2efe9;padding:15px 22px;text-decoration:none;border:1px solid var(--paper-line);
+    transition:border-color 0.2s ease, background 0.2s ease;
+  }
+  .btn-ghost:hover{border-color:#f2efe9;background:rgba(255,255,255,0.05);}
+
+  .hero-services{
+    position:relative;z-index:2;margin-top:76px;
+    border-top:1px solid var(--paper-line);
+    padding-top:8px;
+    display:grid;grid-template-columns:repeat(3,1fr);
+  }
+  .hs-item{
+    display:flex;flex-direction:column;gap:6px;
+    padding:22px 24px 22px 0;
+    text-decoration:none;
+    border-bottom:1px solid var(--paper-line);
+    transition:padding-left 0.25s ease, opacity 0.25s ease;
+  }
+  .hs-item:nth-child(3n){border-right:none;}
+  .hs-item:not(:nth-child(3n)){border-right:1px solid var(--paper-line);padding-right:24px;}
+  .hs-item:hover{padding-left:8px;}
+  .hs-item:hover .hs-label{color:var(--rust);}
+  .hs-num{font-family:var(--ff-mono);font-size:11px;color:var(--rust);letter-spacing:0.05em;}
+  .hs-label{font-family:var(--ff-body);font-weight:600;font-size:15.5px;color:#f2efe9;transition:color 0.2s ease;}
+  .hs-desc{font-family:var(--ff-mono);font-size:12px;color:#9aa0a4;line-height:1.5;}
+  @media(max-width:720px){
+    .hero-services{grid-template-columns:1fr 1fr;}
+    .hs-item:not(:nth-child(3n)){border-right:1px solid var(--paper-line);}
+    .hs-item:nth-child(even){border-right:none;padding-right:0;}
+  }
+  @media(max-width:480px){
+    .hero-services{grid-template-columns:1fr;}
+    .hs-item{border-right:none !important;padding-right:0 !important;}
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about{background:var(--paper);}
+  .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:70px;align-items:start;}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:36px;}}
+  .about h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:18px;line-height:1.15;}
+  .about-lead{font-size:18px;color:var(--ink-soft);margin-top:22px;line-height:1.7;}
+  .about-points{margin-top:30px;display:flex;flex-direction:column;gap:0;}
+  .about-points div{
+    display:grid;grid-template-columns:110px 1fr;gap:20px;
+    padding:22px 0;border-top:1px solid var(--line);
+  }
+  .about-points div:last-child{border-bottom:1px solid var(--line);}
+  .about-points .pt-label{font-family:var(--ff-mono);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--rust);padding-top:2px;}
+  .about-points p{color:var(--ink-soft);font-size:15px;}
+  .about-points strong{display:block;color:var(--ink);font-size:16px;font-weight:600;margin-bottom:5px;font-family:var(--ff-body);}
+
+  /* ---------- SERVICES / CORE SAMPLE ---------- */
+  .services{background:var(--stone);}
+  .services-head{max-width:640px;}
+  .services-head h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:18px;line-height:1.15;}
+  .services-head p{margin-top:20px;color:var(--ink-soft);font-size:17px;line-height:1.65;}
+
+  .core-sample{
+    margin-top:64px;
+    display:grid;
+    grid-template-columns:64px 1fr;
+    gap:0 28px;
+  }
+  .core-legend{
+    position:relative;
+    border-left:2px solid var(--line-strong);
+  }
+  .core-legend span{
+    position:absolute;left:-2px;transform:translateX(-100%);
+    font-family:var(--ff-mono);font-size:10.5px;color:var(--ink-soft);
+    white-space:nowrap;padding-right:10px;
+  }
+  .strata{display:flex;flex-direction:column;border:1px solid var(--line-strong);background:var(--paper);}
+  .layer{
+    display:grid;grid-template-columns:56px 1fr;
+    border-top:1px solid var(--line);
+    cursor:pointer;
+  }
+  .layer:first-child{border-top:none;}
+  .layer-swatch{position:relative;}
+  .layer-swatch .depth{
+    font-family:var(--ff-mono);font-size:10px;color:var(--paper);
+    position:absolute;top:8px;left:0;right:0;text-align:center;opacity:0.75;
+  }
+  .layer-body{padding:22px 24px 22px 0;}
+  .layer-top{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding-left:24px;
+  }
+  .layer-title{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+  .layer-title h3{font-size:19px;font-weight:600;}
+  .layer-tag{font-family:var(--ff-mono);font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:0.05em;}
+  .layer-plus{
+    font-family:var(--ff-mono);font-size:20px;color:var(--rust);
+    transition:transform 0.25s ease;flex-shrink:0;
+  }
+  .layer.open .layer-plus{transform:rotate(45deg);}
+  .layer-detail{
+    max-height:0;overflow:hidden;
+    transition:max-height 0.35s ease, padding 0.35s ease;
+    padding-left:24px;
+  }
+  .layer.open .layer-detail{max-height:260px;}
+  .layer-detail-inner{padding-top:12px;padding-bottom:6px;}
+  .layer-detail p{color:var(--ink-soft);font-size:15px;line-height:1.65;max-width:640px;}
+  .layer-detail ul{margin:14px 0 0;padding-left:18px;color:var(--ink-soft);font-size:14.5px;line-height:1.8;}
+
+  /* six distinct strata colors */
+  .l1 .layer-swatch{background:var(--slate);}
+  .l2 .layer-swatch{background:#5c5138;}
+  .l3 .layer-swatch{background:var(--rust);}
+  .l4 .layer-swatch{background:#3f4a3a;}
+  .l5 .layer-swatch{background:var(--gold);}
+  .l6 .layer-swatch{background:#6b3f52;}
+
+  @media(max-width:720px){
+    .core-sample{grid-template-columns:1fr;}
+    .core-legend{display:none;}
+    .layer{grid-template-columns:40px 1fr;}
+    .layer-swatch .depth{display:none;}
+  }
+
+  /* ---------- SECTORS ---------- */
+  .sectors{background:var(--ink);color:var(--paper);}
+  .sectors .eyebrow{color:#e4b896;}
+  .sectors h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:18px;color:#fbf9f4;max-width:600px;line-height:1.2;}
+  .sector-grid{
+    margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    background:var(--paper-line);
+  }
+  @media(max-width:900px){.sector-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:480px){.sector-grid{grid-template-columns:1fr;}}
+  .sector-card{background:var(--ink);padding:34px 26px;}
+  .sector-num{font-family:var(--ff-mono);font-size:12px;color:var(--rust);}
+  .sector-card h3{margin-top:16px;font-size:19px;color:#fbf9f4;font-weight:600;}
+  .sector-card p{margin-top:10px;font-size:14.5px;color:#a7acaf;line-height:1.6;}
+
+  /* ---------- STANDARDS ---------- */
+  .standards{background:var(--paper);}
+  .standards-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:70px;align-items:center;}
+  @media(max-width:860px){.standards-grid{grid-template-columns:1fr;gap:44px;}}
+  .standards h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:18px;line-height:1.18;}
+  .standards-lead{margin-top:22px;color:var(--ink-soft);font-size:17px;line-height:1.7;}
+  .standard-list{display:flex;flex-direction:column;gap:0;}
+  .standard-list div{
+    display:flex;gap:20px;padding:24px 0;border-top:1px solid var(--line);
+  }
+  .standard-list div:last-child{border-bottom:1px solid var(--line);}
+  .standard-icon{
+    width:38px;height:38px;flex-shrink:0;
+    border:1.5px solid var(--slate);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--ff-mono);font-size:13px;color:var(--slate);
+  }
+  .standard-list strong{display:block;font-size:16.5px;font-weight:600;margin-bottom:6px;}
+  .standard-list p{color:var(--ink-soft);font-size:14.5px;line-height:1.6;}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--slate);color:var(--paper);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;}
+  @media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:44px;}}
+  .contact .eyebrow{color:#cfe0e8;}
+  .contact .eyebrow::before{background:var(--gold);}
+  .contact h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:18px;color:#fbf9f4;line-height:1.15;}
+  .contact-lead{margin-top:20px;color:#cdd8dd;font-size:16.5px;line-height:1.65;max-width:440px;}
+  .contact-detail{margin-top:40px;display:flex;flex-direction:column;gap:22px;}
+  .contact-detail div{border-top:1px solid rgba(247,246,242,0.18);padding-top:18px;}
+  .contact-detail span{display:block;font-family:var(--ff-mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9fb6c0;margin-bottom:7px;}
+  .contact-detail strong{font-size:16.5px;font-weight:500;font-family:var(--ff-body);color:#fbf9f4;}
+  .contact-detail a{text-decoration:none;color:#fbf9f4;border-bottom:1px solid rgba(247,246,242,0.35);}
+
+  .contact-form{background:var(--paper);color:var(--ink);padding:38px;}
+  .contact-form h3{font-size:18px;font-weight:600;margin-bottom:22px;}
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-family:var(--ff-mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px;}
+  .field input, .field textarea, .field select{
+    width:100%;border:1px solid var(--line-strong);background:transparent;
+    padding:12px 13px;font-family:var(--ff-body);font-size:14.5px;color:var(--ink);
+    resize:vertical;
+  }
+  .field input:focus, .field textarea:focus, .field select:focus{border-color:var(--slate);}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:480px){.field-row{grid-template-columns:1fr;}}
+  .submit-btn{
+    width:100%;font-family:var(--ff-mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+    background:var(--ink);color:var(--paper);padding:15px;border:none;cursor:pointer;margin-top:6px;
+    transition:background 0.2s ease;
+  }
+  .submit-btn:hover{background:var(--rust);}
+  .form-note{font-size:12.5px;color:var(--ink-soft);margin-top:12px;line-height:1.5;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink);color:#9aa0a4;padding:50px 0 34px;}
+  .footer-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:30px;padding-bottom:36px;border-bottom:1px solid var(--paper-line);}
+  .footer-brand strong{font-family:var(--ff-display);color:#fbf9f4;font-size:18px;display:block;margin-bottom:8px;}
+  .footer-brand p{font-size:13.5px;max-width:320px;line-height:1.6;}
+  .footer-links{display:flex;gap:56px;flex-wrap:wrap;}
+  .footer-col span{display:block;font-family:var(--ff-mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#6a6f72;margin-bottom:14px;}
+  .footer-col a{display:block;font-size:14px;color:#c2c6c8;text-decoration:none;margin-bottom:10px;}
+  .footer-col a:hover{color:#fff;}
+  .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:26px;font-size:12.5px;font-family:var(--ff-mono);}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity 0.6s ease, transform 0.6s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <a href="#top" class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-text">
+        <strong>KADIM CONSULTANCY</strong>
+        <span>Sierra Leone Limited</span>
+      </span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#sectors">Sectors</a>
+      <a href="#standards">Standards</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="cta-btn">Request a Quote</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <svg class="hero-contours" viewBox="0 0 500 600" aria-hidden="true">
+      <g fill="none" stroke="#f7f6f2" stroke-width="1">
+        <ellipse cx="330" cy="230" rx="150" ry="190" opacity="0.5"/>
+        <ellipse cx="330" cy="230" rx="115" ry="150" opacity="0.4"/>
+        <ellipse cx="330" cy="230" rx="80" ry="110" opacity="0.35"/>
+        <ellipse cx="330" cy="230" rx="48" ry="72" opacity="0.3"/>
+        <ellipse cx="330" cy="230" rx="20" ry="32" opacity="0.25"/>
+      </g>
+    </svg>
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Freetown, Sierra Leone — One Consultancy, Six Services</div>
+      <h1>Ground truth for Sierra Leone's <em>build, dig,</em> and <em>supply</em>.</h1>
+      <p class="hero-sub">Kadim Consultancy Sierra Leone Limited is a full-service consultancy — engineering and geological expertise for construction and mining, quality control that protects every project, and a general services arm covering supply, and retail. Six disciplines, one point of contact, everywhere in Sierra Leone.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Request a quote</a>
+        <a href="#services" class="btn-ghost">View our services</a>
+      </div>
+      <div class="hero-services">
+        <a href="#services" class="hs-item"><span class="hs-num">01</span><span class="hs-label">Engineering Services</span><span class="hs-desc">Structural &amp; civil works, site supervision</span></a>
+        <a href="#services" class="hs-item"><span class="hs-num">02</span><span class="hs-label">Geological &amp; Geotechnical</span><span class="hs-desc">Site investigation &amp; subsurface testing</span></a>
+        <a href="#services" class="hs-item"><span class="hs-num">03</span><span class="hs-label">Quality Control</span><span class="hs-desc">Materials testing &amp; compliance checks</span></a>
+        <a href="#services" class="hs-item"><span class="hs-num">04</span><span class="hs-label">General Supply</span><span class="hs-desc">Construction, mining &amp; foodstuff goods</span></a>
+        <a href="#services" class="hs-item"><span class="hs-num">05</span><span class="hs-label">Restaurant</span><span class="hs-desc">Food service &amp; catering</span></a>
+        <a href="#services" class="hs-item"><span class="hs-num">06</span><span class="hs-label">Boutique</span><span class="hs-desc">Retail goods &amp; apparel</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <div class="eyebrow">About Kadim</div>
+        <h2>One consultancy, built for how to actually gets things done professinally.</h2>
+      </div>
+      <div>
+        <p class="about-lead reveal">Construction and mining projects here rarely fail for lack of ambition — they stall on ground conditions that were never properly tested, materials that were never properly checked, or a supply chain that couldn't keep pace with the site. Kadim Consultancy Sierra Leone Limited was formed to close those gaps under one roof: engineering judgement, geological data, quality assurance and dependable supply, working together instead of in silos.</p>
+        <div class="about-points">
+          <div class="reveal">
+            <div class="pt-label">Approach</div>
+            <p><strong>Field data before recommendations.</strong>Every engineering or design decision we make is grounded in site investigation and testing, not assumption — the same discipline that guides our geotechnical work carries through to how we run quality control and manage supply.</p>
+          </div>
+          <div class="reveal">
+            <div class="pt-label">Reach</div>
+            <p><strong>Built for local sites, held to international method.</strong>We work to internationally recognised engineering and testing methods, adapted to Sierra Leone's terrain, materials and regulatory environment — so clients and partners abroad can rely on our findings as readily as clients on the ground.</p>
+          </div>
+          <div class="reveal">
+            <div class="pt-label">Structure</div>
+            <p><strong>Six services, one point of contact.</strong>From a borehole investigation to a boutique fit-out, you deal with a single consultancy that understands how the pieces of your project connect — not six separate vendors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="services-head reveal">
+        <div class="eyebrow">What we do</div>
+        <h2>Six services, read like a core sample.</h2>
+        <p>Every geotechnical investigation starts with a core sample — a cross-section that shows what a site is really made of, layer by layer. Our services work the same way: distinct disciplines, stacked together, that give a fuller picture of your project than any one of them could alone. Select a layer to read more.</p>
+      </div>
+
+      <div class="core-sample reveal">
+        <div class="core-legend">
+          <span style="top:0;">0m</span>
+          <span style="top:16.5%;">—</span>
+          <span style="top:33%;">—</span>
+          <span style="top:49.5%;">—</span>
+          <span style="top:66%;">—</span>
+          <span style="top:82.5%;">—</span>
+          <span style="top:99%;">6m</span>
+        </div>
+
+        <div class="strata">
+          <div class="layer l1 open" data-layer>
+            <div class="layer-swatch"><span class="depth">01</span></div>
+            <div class="layer-body">
+              <div class="layer-top">
+                <div class="layer-title"><h3>Engineering Services</h3><span class="layer-tag">Civil &amp; structural</span></div>
+                <span class="layer-plus">+</span>
+              </div>
+              <div class="layer-detail">
+                <div class="layer-detail-inner">
+                  <p>Structural and civil engineering support across the project lifecycle — from concept and design review through to site supervision and handover — for buildings, roads and mining infrastructure.</p>
+                  <ul>
+                    <li>Structural design review &amp; civil works oversight</li>
+                    <li>Site supervision and progress verification</li>
+                    <li>Infrastructure assessment for construction &amp; mining sites</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer l2" data-layer>
+            <div class="layer-swatch"><span class="depth">02</span></div>
+            <div class="layer-body">
+              <div class="layer-top">
+                <div class="layer-title"><h3>Geological &amp; Geotechnical Investigation</h3><span class="layer-tag">Site &amp; subsurface</span></div>
+                <span class="layer-plus">+</span>
+              </div>
+              <div class="layer-detail">
+                <div class="layer-detail-inner">
+                  <p>Ground investigation that tells you what you're actually building on or mining into, before capital is committed — reducing risk for foundations, earthworks and extraction.</p>
+                  <ul>
+                    <li>Borehole drilling &amp; soil/rock sampling</li>
+                    <li>Site geological mapping and characterisation</li>
+                    <li>Foundation and slope stability investigation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer l3" data-layer>
+            <div class="layer-swatch"><span class="depth">03</span></div>
+            <div class="layer-body">
+              <div class="layer-top">
+                <div class="layer-title"><h3>Quality Control Services</h3><span class="layer-tag">Testing &amp; compliance</span></div>
+                <span class="layer-plus">+</span>
+              </div>
+              <div class="layer-detail">
+                <div class="layer-detail-inner">
+                  <p>Independent materials testing and compliance checks that protect the integrity of a build — catching problems on site, not after handover.</p>
+                  <ul>
+                    <li>Construction material testing (soil, concrete, aggregates)</li>
+                    <li>Compliance verification against project specifications</li>
+                    <li>Quality assurance reporting for contractors &amp; developers</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer l4" data-layer>
+            <div class="layer-swatch"><span class="depth">04</span></div>
+            <div class="layer-body">
+              <div class="layer-top">
+                <div class="layer-title"><h3>General Supply Services</h3><span class="layer-tag">Construction · mining · foodstuff</span></div>
+                <span class="layer-plus">+</span>
+              </div>
+              <div class="layer-detail">
+                <div class="layer-detail-inner">
+                  <p>Sourcing and supply of goods across three sectors that Sierra Leone's economy depends on — so sites, operations and kitchens are never left waiting on materials.</p>
+                  <ul>
+                    <li>Construction materials &amp; equipment supply</li>
+                    <li>Mining consumables &amp; general goods</li>
+                    <li>Foodstuff supply for institutional &amp; commercial buyers</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer l5" data-layer>
+            <div class="layer-swatch"><span class="depth">05</span></div>
+            <div class="layer-body">
+              <div class="layer-top">
+                <div class="layer-title"><h3>Restaurant</h3><span class="layer-tag">Hospitality</span></div>
+                <span class="layer-plus">+</span>
+              </div>
+              <div class="layer-detail">
+                <div class="layer-detail-inner">
+                  <p>A Kadim-run restaurant offering quality food service — a growing part of our general services portfolio and a reflection of the same standards we apply on site.</p>
+                  <ul>
+                    <li>Dine-in &amp; catering for corporate clients</li>
+                    <li>Sourced through our own foodstuff supply channels</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer l6" data-layer>
+            <div class="layer-swatch"><span class="depth">06</span></div>
+            <div class="layer-body">
+              <div class="layer-top">
+                <div class="layer-title"><h3>Boutique</h3><span class="layer-tag">Retail</span></div>
+                <span class="layer-plus">+</span>
+              </div>
+              <div class="layer-detail">
+                <div class="layer-detail-inner">
+                  <p>A retail boutique operated under the Kadim name, extending the group's presence into everyday consumer goods and fashion retail.</p>
+                  <ul>
+                    <li>Curated retail goods &amp; apparel</li>
+                    <li>Part of Kadim's diversified general services division</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS -->
+  <section class="sectors" id="sectors">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">Who we serve</div>
+        <h2>Built for the sectors that move Sierra Leone forward.</h2>
+      </div>
+      <div class="sector-grid">
+        <div class="sector-card reveal">
+          <div class="sector-num">A</div>
+          <h3>Construction</h3>
+          <p>Developers and contractors needing site investigation, materials testing and engineering oversight from ground-break to handover.</p>
+        </div>
+        <div class="sector-card reveal">
+          <div class="sector-num">B</div>
+          <h3>Mining</h3>
+          <p>Operators requiring geological assessment, geotechnical data and reliable supply of consumables and equipment.</p>
+        </div>
+        <div class="sector-card reveal">
+          <div class="sector-num">C</div>
+          <h3>Food &amp; Hospitality</h3>
+          <p>Institutions and commercial buyers sourcing foodstuff, alongside our own restaurant operation.</p>
+        </div>
+        <div class="sector-card reveal">
+          <div class="sector-num">D</div>
+          <h3>Retail</h3>
+          <p>Consumers and partners engaging with our boutique and general goods supply.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STANDARDS -->
+  <section class="standards" id="standards">
+    <div class="wrap standards-grid">
+      <div class="reveal">
+        <div class="eyebrow">How we work</div>
+        <h2>Committed to international best practice, applied locally.</h2>
+        <p class="standards-lead">We hold our engineering, geotechnical and quality control work to internationally recognised methods and reporting standards, and we're straightforward with clients about scope, findings and limitations — no inflated claims, just field data and sound judgement.</p>
+      </div>
+      <div class="standard-list">
+        <div class="reveal">
+          <div class="standard-icon">01</div>
+          <div><strong>Method-led investigation</strong><p>Site and materials investigations follow internationally recognised testing and sampling methods, documented and traceable.</p></div>
+        </div>
+        <div class="reveal">
+          <div class="standard-icon">02</div>
+          <div><strong>Independent quality control</strong><p>Our quality control function reports on what materials and works actually meet, without softening findings for convenience.</p></div>
+        </div>
+        <div class="reveal">
+          <div class="standard-icon">03</div>
+          <div><strong>Clear, usable reporting</strong><p>Engineering and geotechnical reports are written to be acted on — by your engineers, financiers or regulators — not just filed away.</p></div>
+        </div>
+        <div class="reveal">
+          <div class="standard-icon">04</div>
+          <div><strong>Reliable supply chain</strong><p>Our general services division applies the same discipline to sourcing and delivery, so projects and operations aren't held up waiting on goods.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Tell us about your site, and we'll tell you what it needs.</h2>
+        <p class="contact-lead">Whether it's a geotechnical investigation, a quality control check, or a supply order — reach out and a member of the Kadim team will follow up.</p>
+        <div class="contact-detail">
+          <div>
+            <span>Head Office</span>
+            <strong>Freetown, Sierra Leone <span style="opacity:.6;font-family:var(--ff-mono);font-size:12px;">(add full street address)</span></strong>
+          </div>
+          <div>
+            <span>Phone</span>
+            <strong><a href="tel:+232000000000">+232 00 000 000</a> <span style="opacity:.6;font-family:var(--ff-mono);font-size:12px;">(add real number)</span></strong>
+          </div>
+          <div>
+            <span>Email</span>
+            <strong><a href="mailto:info@kadimconsultancysl.com">info@kadimconsultancysl.com</a> <span style="opacity:.6;font-family:var(--ff-mono);font-size:12px;">(confirm domain)</span></strong>
+          </div>
+          <div>
+            <span>Hours</span>
+            <strong>Monday – Friday, 8:00 – 17:00 GMT</strong>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="quoteForm">
+        <h3>Request a quote</h3>
+        <div class="field-row">
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" required></div>
+          <div class="field"><label for="company">Company (optional)</label><input id="company" name="company" type="text"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div>
+        </div>
+        <div class="field">
+          <label for="service">Service needed</label>
+          <select id="service" name="service">
+            <option>Engineering Services</option>
+            <option>Geological &amp; Geotechnical Investigation</option>
+            <option>Quality Control Services</option>
+            <option>General Supply (construction / mining / foodstuff)</option>
+            <option>Restaurant</option>
+            <option>Boutique</option>
+            <option>Other / not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send request</button>
+        <p class="form-note" id="formNote">This form currently displays a confirmation only — connect it to an email service or backend to receive submissions.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <strong>KADIM CONSULTANCY SIERRA LEONE LIMITED</strong>
+        <p>Engineering, geological and general services for construction, mining, food and retail across Sierra Leone.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span>Company</span>
+          <a href="#about">About</a>
+          <a href="#standards">Standards</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span>Services</span>
+          <a href="#services">Engineering</a>
+          <a href="#services">Geotechnical</a>
+          <a href="#services">Quality Control</a>
+          <a href="#services">General Supply</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Kadim Consultancy Sierra Leone Limited. All rights reserved.</span>
+      <span>Freetown, Sierra Leone</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  document.querySelectorAll('[data-layer]').forEach(layer => {
+    layer.querySelector('.layer-top').addEventListener('click', () => {
+      const isOpen = layer.classList.contains('open');
+      document.querySelectorAll('[data-layer]').forEach(l => l.classList.remove('open'));
+      if (!isOpen) layer.classList.add('open');
+    });
+  });
+
+  const form = document.getElementById('quoteForm');
+  const note = document.getElementById('formNote');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    note.textContent = 'Thanks — this is a static demo, so nothing was actually sent. Connect this form to an email service to go live.';
+    note.style.color = 'var(--rust)';
+  });
+
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
